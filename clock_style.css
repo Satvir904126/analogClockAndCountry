@@ -1,0 +1,201 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    position: absolute;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    background-color: rgb(29, 110, 202);
+}
+
+.country {
+    position: relative;
+    font-size: 50px;
+    width: 50%;
+}
+
+.clock {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to top left, rgba(120, 177, 133, 0.6) 0%, rgba(216, 49, 57, 0.4) 50%, rgba(180, 38, 121, 0.7)100%);
+    border-radius: 50%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    /* position: relative; */
+    /* border: 2px solid rgba(170, 145, 75, 0.4); */
+    box-shadow: 0 0 10px rgb(134, 190, 228);
+}
+
+.middle {
+    width: 25px;
+    height: 25px;
+    background-color: rosybrown;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-25%, 50%);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.setmiddle {
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    border-radius: 20px;
+    transform-origin: bottom;
+}
+
+.hour {
+    --rotation: 0;
+    width: 15px;
+    height: 110px;
+    background-color: black;
+    transform: rotate(calc(var(--rotation)*31deg));
+}
+
+.minute {
+    --rotation: 0;
+    width: 9px;
+    height: 150px;
+    background-color: red;
+    transform: rotate(calc(var(--rotation)*6deg));
+}
+
+.second {
+    --rotation: 0;
+    width: 5px;
+    height: 180px;
+    background-color: blue;
+    transform: rotate(calc(var(--rotation)*6deg));
+    /* transform: translate(-50%, 45px); */
+}
+
+.num {
+    --rotation: 160;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 29px;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    /* transform: rotate(calc(var(--rotation)*1deg)); */
+    /* transform: rotate(20deg); */
+}
+
+.num1 {
+    transform: rotate(30deg);
+}
+
+.rotate1 {
+    position: absolute;
+    transform: rotate(330deg);
+}
+
+.num2 {
+    transform: rotate(60deg);
+}
+
+.rotate2 {
+    position: absolute;
+    transform: rotate(300deg);
+}
+
+.num3 {
+    transform: rotate(90deg);
+}
+
+.rotate3 {
+    position: absolute;
+    transform: rotate(270deg);
+}
+
+.num4 {
+    transform: rotate(120deg);
+}
+
+.rotate4 {
+    position: absolute;
+    transform: rotate(240deg);
+}
+
+.num5 {
+    transform: rotate(150deg);
+}
+
+.rotate5 {
+    position: absolute;
+    transform: rotate(210deg);
+}
+
+.num6 {
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.rotate6 {
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.num7 {
+    transform: rotate(210deg);
+}
+
+.rotate7 {
+    position: absolute;
+    transform: rotate(150deg);
+}
+
+.num8 {
+    transform: rotate(240deg);
+}
+
+.rotate8 {
+    position: absolute;
+    transform: rotate(120deg);
+}
+
+.num9 {
+    transform: rotate(270deg);
+}
+
+.rotate9 {
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.num10 {
+    transform: rotate(300deg);
+}
+
+.rotate10 {
+    position: absolute;
+    transform: rotate(60deg);
+}
+
+.num11 {
+    transform: rotate(330deg);
+}
+
+.rotate11 {
+    position: absolute;
+    transform: rotate(30deg);
+}
+
+.num12 {
+    transform: rotate(360deg);
+}
+
+.rotate12 {
+    position: absolute;
+    transform: rotate(0deg);
+}
